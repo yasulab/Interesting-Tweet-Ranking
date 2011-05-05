@@ -51,6 +51,26 @@ Usage
 
   $ sh main.sh TWITTER_ACCOUNT LIST_OWNER LIST_NAME
 
+
+Local Test
+----------
+For those who want to see how this program works quickly,
+please type the following command, which does not require
+any things to run the program. 
+
+  $ sh local-test.sh
+
+Get Latest Code
+---------------
+
+Type following command:
+
+  $ git clone git://github.com/yasulab/Interesting-Tweet-Ranking.git
+
+Or, visit the following site:
+
+  https://github.com/yasulab/Interesting-Tweet-Ranking
+
   
 Sample Output 1
 ---------------

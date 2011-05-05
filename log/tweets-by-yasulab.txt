@@ -1,3 +1,7 @@
+留学して一年経つけど未だに微妙に英語の訂正があったり。まぁあと十年ぐらいここで暮らしてみれば治るはず。can be occurred. -&gt; can be uttered OR can occur.
+          
+Author Evaluatorを使ってDo Something Cool！という課題が与えられたので、自分のtweetsを学習データとして、自分のTLの中から、最も興味がありそうなtweetをランキング形式で表示するプログラムを作成（未完）。ソース：http://丁砦.跳.jp
+          
 あんなに苦しめられたAIの授業も、あとはFinalを残すのみか。ちょっと感慨深い。
           
 [Blog] Tail Gamers: 
@@ -34,8 +38,4 @@ Disney Smart-phone App Contestが開催。グランプリ、準グランプリ�
 @tkntkfm いえ、その問題は放置しているので、未だ解決はしてません。お役に立てなくてすみません。
           
 Image-based Word Listの開発凍結に伴い、ソースコードを公開しました。http://yasulab.blogspot.com/2011/04/titanium-studio-iphone.html
-          
-Titanium Studio for MacでAndroidのpathを通しているはずなのにAndroid SDKを認識してくれない。というか反応すらしない。CUIでやれということですね、分かります。
-          
-ホイッスル on Androidが書籍に載るかもしれないという罠。マジっすか。おじさん頑張ってWidget作っちゃうよ。
           

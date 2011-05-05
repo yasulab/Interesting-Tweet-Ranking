@@ -22,14 +22,16 @@ For 1. and 3., to get tweets, the program uses lxml.
 So, you need to install lxml for running this program
 
 For 2. and 4., this program uses Google Translate API.
+The API has limited number of use. So, if the program returns,
+HTTP Error 403, it means you exceeded the number of use.
 
 For 5. and 6., this program assumes that you will be interested
 in the tweets that has similar words you recently tweets.
 
 In other words, your recent tweets are used as training data,
-and score each tweet in the list with the result of training.
-And if a tweet has a high score, it means that it will be the
-tweet you might be interested in because the tweet includes
+and with the result of training, score each tweet in the list.
+So, if a tweet has a high score, it means that it might be the
+tweet you are interested in because the tweet includes
 similar words to what you recently tweeted.
 
 
@@ -48,6 +50,19 @@ Usage
 -----
 
   $ sh main.sh TWITTER_ACCOUNT LIST_OWNER LIST_NAME
+
+
+
+Get Latest Code
+---------------
+
+Type following command:
+
+  $ git clone git://github.com/yasulab/Interesting-Tweet-Ranking.git
+
+Or, visit the following site:
+
+  https://github.com/yasulab/Interesting-Tweet-Ranking
 
   
 Sample Output 1
@@ -108,7 +123,6 @@ Sample Output 2
 ---------------
 
 $ sh main.sh billgates yasulab watch
-
 
 Getting recent tweets by billgates... Done.
 Translating the tweets into English... Done.
