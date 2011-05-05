@@ -1,0 +1,30 @@
+There are two problems found so far.
+
+One is that, by comparing the results of the two following example,
+
+-1. $ sh main.sh yasulab yasulab watch   (Sample Output 1 in README)
+-2. $ sh main.sh BillGates yasulab watch (Sample Output 2 in README)
+
+the result rankings of both are very similar.
+
+It is clear that the tweets by yasulab (my twitter account)
+and tweets by BillGates are quite different, but the score
+for each tweet in my watch list is very similar.
+
+This would be because the score function results in high score
+for short sentences. In fact, for both results, short tweets get
+high score. So, to improve the program, I need to use scoring function
+that scores tweets regardless of the length of tweets.
+
+
+The other problem is that measuring how much accurate of the ranking
+is very difficult, because how much interested in the tweets totally
+depends on user's sence. So, it would be difficult to make sure that
+fixing the scoring algorithm makes sense for generating the ranking.
+
+Maybe collect feedbacks from users be helpful for improving the
+function, but it will need tons of work because I have to ask users
+to get feedbacks whenever I fix the algorithm.
+
+
+User Feedback

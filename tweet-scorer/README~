@@ -1,0 +1,8 @@
+Description:
+
+  This program scores tweets in TWEET_LIST
+  using YOUR_TWEETS as a training data.
+
+Usage:
+
+  $ python scoring-tweets.py YOUR_TWEETS TWEETS_LIST

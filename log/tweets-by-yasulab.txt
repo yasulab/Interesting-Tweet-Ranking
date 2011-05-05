@@ -1,0 +1,41 @@
+あんなに苦しめられたAIの授業も、あとはFinalを残すのみか。ちょっと感慨深い。
+          
+[Blog] Tail Gamers: 
+グループプロジェクトで制作していたウェブサイトがほぼ完成したので、公開します。サイト名はTail Gamersで、このサイトでは、色々なゲームについて図を用いて説明してます。僕の個人... http://bit.ly/jhBxBO
+          
+[Blog] Author Evaluator: AIの最後のプロジェクトで、Bigramを用いて、与えられたテキストから尤もらしい著者を推測するプログラムを作りました。まだバグがある(そして、プログラムが汚い)ので、参考程... http://bit.ly/lFMeoF
+          
+Little Betsがようやく届いた！友人からアメリカの配送サービスは当てにならないと聞いていたけど、本当にそうだった。Easter Break中に読む予定だったのに、休み明けに届くという失態。Finalまでには読み終わっていたい。 http://amzn.to/kquIF6
+          
+そして経済学の課題をやり忘れた事に今気付く。まぁ、そこまで時間掛からないから朝飯でも食べながらさくっとさくっと。
+          
+AIの課題がようやく終わった。と思ったら既に朝７時だった。起きてるのに鳴る目覚ましがちょっと虚しい。でも自然言語処理のやり方は大体分かったような気がするので、今日からpythonでプログラムを書き始めてみる。
+          
+@ac_vellio こちらこそ、早い段階で詳細なレビューを頂けた事はとても嬉しかったです。今後ともよろしくお願い致します。
+          
+ホイッスル on Androidが5/20発売の「Mobile ASCII」に掲載されることになりました。
+          
+"the worse, the better"のイディオムを勘違いしていて、あやうくAIの課題の難易度を最上級にするところだった。危ない危ない。
+          
+後輩（兼師匠）がつくったアプリ、ホイッスル on Androidが日経BPに取り上げられた、の巻 / 震災対策に有効なスマートフォンアプリ：ニューストレンド http://htn.to/SVv5mN
+            
+お、Amazon.comから無事にWhistle on Androidの承認を貰えました。当然だけど、Appleとの審査基準は違うね。Amazon.comの方が緩い感じ。同じAppのiPhone版はrejectされたので。 http://amzn.to/eHcGDf
+          
+わけあって、Easter Break中に引っ越しすることに。でも引っ越し先の部屋は広くてキレイ。しかも上の階の奴はバスケットボールついたりしないし、隣の部屋にいる奴がいきなり歌い出したりしない。なにこの快適な生活。素敵。休日を潰して引っ越しした甲斐があった。
+          
+日経BPのPC onlineにホイッスル on Androidを載せて頂きました。気付かなかったけど、日経パソコンの4/11号にも載ってたのね。RT @pc_online:震災対策に有効なスマートフォンアプリ  http://bit.ly/ezFQhD
+          
+Generative Online Sound Sequencer - Otomata http://t.co/3YuSrEe via @youtube
+          
+@Yojivoix 別に今回に限った事ではないですが、試作版を作って徐々に改良していく開発方法もあるので、完璧な物を最初から作る必要は無いです。恐らく、ディズニー側もその開発方法を望んでいるはずです。早すぎる最適化は、ディズニー側からの改善案を妨げ、開発側の負担を大きくします。
+          
+Disney Smart-phone App Contestが開催。グランプリ、準グランプリ、アイデア賞にそれぞれ100万、30万、10万。有料アプリなら特定の比率でディズニーと利益分配。5/22〆。http://appcontest.disney.co.jp/index.php
+          
+@tkntkfm いえ、その問題は放置しているので、未だ解決はしてません。お役に立てなくてすみません。
+          
+Image-based Word Listの開発凍結に伴い、ソースコードを公開しました。http://yasulab.blogspot.com/2011/04/titanium-studio-iphone.html
+          
+Titanium Studio for MacでAndroidのpathを通しているはずなのにAndroid SDKを認識してくれない。というか反応すらしない。CUIでやれということですね、分かります。
+          
+ホイッスル on Androidが書籍に載るかもしれないという罠。マジっすか。おじさん頑張ってWidget作っちゃうよ。
+          

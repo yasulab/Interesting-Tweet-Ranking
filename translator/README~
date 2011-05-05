@@ -1,0 +1,13 @@
+Usage:
+
+  $ python translator.py FILENAME TYPE
+
+TYPE should be one of the followings:
+
+- ja2en: Translate a given Japanese text into English
+- en2ja: Translate a given English text into Japanese
+
+NOTE:
+
+  This API has limited number of use. If you exceed the number,
+  this program returns HTTP Error 403 - Forbidden.

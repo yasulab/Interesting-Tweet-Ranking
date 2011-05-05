@@ -1,0 +1,160 @@
+Description
+-----------
+
+This is a program that finds interesting tweets for you.
+Given your (or someone's) twitter account and twitter list
+with its owner, the program finds interesting tweets from
+the list for you (or for someone).
+
+The program includes a function that translates Japanese into
+English, so Japanese and English users can use this program.
+
+This program finds the interesting tweets in the follwoing ways:
+
+1. Get recent tweets by you.
+2. Translate them into English (if they are Japanese)
+3. Get the tweets in your (or someone's) list.
+4. Translate them into English (if they are Japanese)
+5. With the tweets by you, score each tweet in the list.
+6. Show high score tweets, which would be interesting to you.
+
+For 1. and 3., to get tweets, the program uses lxml.
+So, you need to install lxml for running this program
+
+For 2. and 4., this program uses Google Translate API.
+
+For 5. and 6., this program assumes that you will be interested
+in the tweets that has similar words you recently tweets.
+
+In other words, your recent tweets are used as training data,
+and score each tweet in the list with the result of training.
+And if a tweet has a high score, it means that it will be the
+tweet you might be interested in because the tweet includes
+similar words to what you recently tweeted.
+
+
+
+Requirement
+-----------
+
+- lxml
+-- Download: http://lxml.de/index.html#download
+-- Or, type following command to download.
+
+   $ git clone https://github.com/lxml/lxml.git lxml
+
+   
+Usage
+-----
+
+  $ sh main.sh TWITTER_ACCOUNT LIST_OWNER LIST_NAME
+
+  
+Sample Output 1
+---------------
+
+$ sh main.sh yasulab yasulab watch
+
+Getting recent tweets by yasulab... Done.
+Translating the tweets into English... Done.
+Getting yasulab's watch list... Done.
+Translating the tweets into English... Done.
+Generating the interesting tweet ranking for yasulab...
+
+ 1: Google Chrome&#39;s Emotional Ad http://goo.gl/fb/wvlDD
+
+ 2: Android apps on PlayBook eyes-on (video) http://engt.co/mpgS3U
+
+ 3: A More Obvious Sign Out Link http://goo.gl/fb/dHho8
+
+ 4: Original: Xubuntu 11.04: Solid, Sleek, and Speedy http://bit.ly/jMthZL # linux
+
+ 5: Spotify launches music download service with iPod sync, puts iTunes on notice http://engt.co/mSJK0j
+
+ 6: Nintendo Wii Vitality Sensor still coming to a hand near you, says Iwata http://engt.co/mCg7uC
+
+ 7: Nokia Chairman Jorma Ollila to step down next year, complete exodus of old guard http://engt.co/l12Lad
+
+ 8: Pioneer Computers DreamBook ePad 10 Plus Android Tablet: Pioneer Computers has once again expanded its line of A. .. http://bit.ly/kf3oS8
+
+ 9: Free iPhone app of the day - Spartans vs Vikings: News from DailyMobile.se: The vikings have gone back in time a. .. http://bit.ly/j0nMYE
+
+10: We r happy to support our Japan colleagues! Linus to headline LinuxCon Japan. LF donating funds to relief efforts. Http://bit.ly/iAzMp3
+
+11: Graphic: Never Mind About Free Apps, Sales Will Grow 77 Percent This Year: Developers that are bemoaning the dom ... http://bit.ly/kjytjW
+
+12: Muve Music now available in all Cricket markets: Cricket has been steadily adding new markets for its Muve Music ... http://bit.ly/mPfDLB
+
+13: T-Mobile Lights Up More HSPA + Markets: T-Mobile today announced via its official Twitter account that the market ... http://bit.ly/mowfxt
+
+14: Amazon launches MyHabit.com to compete with Gilt: On Tuesday evening, Amazon will take the wraps off of MyHabit .... http://bit.ly/mNBg3A
+
+15: Congrats to this week&#39;s # linuxcon Twitter / identi.ca winner @ smaffulli: &quot;Linux is mine and yours and theirs&quot; # linux # funambol
+
+16: To better understand Google, read Steven Levy&#39;s &quot;In the Plex&quot;. It&#39;s a really great book. Http://goo.gl/ITIaR
+
+17: We r giving away one free # linuxcon pass for every Video Contest submission. That&#39;s a $ 500 value. Submit here: http://bit.ly/fAvOp7
+
+18: Updated: iOS 5 rumours: what you need to know: We&#39;re expecting big things from Apple this year: the iPhone 5 is ... http://bit.ly/g7hBhY
+
+19: This wk&#39;s # linuxcon contest: where were u when u first discovered # linux? Post using # linuxcon and win free pass to event! Winner Monday!
+
+20: &quot;We designed Google to be the place where the kind of people we wanted to work here would work for free.&quot; (Urs Holzle) http://goo.gl/P1Bw0
+
+Done.
+	 
+
+Sample Output 2
+---------------
+
+$ sh main.sh billgates yasulab watch
+
+
+Getting recent tweets by billgates... Done.
+Translating the tweets into English... Done.
+Getting yasulab's watch list... Done.
+Translating the tweets into English... Done.
+Generating the interesting tweet ranking for billgates...
+
+ 1: Google Chrome&#39;s Emotional Ad http://goo.gl/fb/wvlDD
+
+ 2: Android apps on PlayBook eyes-on (video) http://engt.co/mpgS3U
+
+ 3: A More Obvious Sign Out Link http://goo.gl/fb/dHho8
+
+ 4: Original: Xubuntu 11.04: Solid, Sleek, and Speedy http://bit.ly/jMthZL # linux
+
+ 5: Spotify launches music download service with iPod sync, puts iTunes on notice http://engt.co/mSJK0j
+
+ 6: Nintendo Wii Vitality Sensor still coming to a hand near you, says Iwata http://engt.co/mCg7uC
+
+ 7: Nokia Chairman Jorma Ollila to step down next year, complete exodus of old guard http://engt.co/l12Lad
+
+ 8: Pioneer Computers DreamBook ePad 10 Plus Android Tablet: Pioneer Computers has once again expanded its line of A. .. http://bit.ly/kf3oS8
+
+ 9: We r happy to support our Japan colleagues! Linus to headline LinuxCon Japan. LF donating funds to relief efforts. Http://bit.ly/iAzMp3
+
+10: Free iPhone app of the day - Spartans vs Vikings: News from DailyMobile.se: The vikings have gone back in time a. .. http://bit.ly/j0nMYE
+
+11: Graphic: Never Mind About Free Apps, Sales Will Grow 77 Percent This Year: Developers that are bemoaning the dom ... http://bit.ly/kjytjW
+
+12: Muve Music now available in all Cricket markets: Cricket has been steadily adding new markets for its Muve Music ... http://bit.ly/mPfDLB
+
+13: T-Mobile Lights Up More HSPA + Markets: T-Mobile today announced via its official Twitter account that the market ... http://bit.ly/mowfxt
+
+14: Amazon launches MyHabit.com to compete with Gilt: On Tuesday evening, Amazon will take the wraps off of MyHabit .... http://bit.ly/mNBg3A
+
+15: We r giving away one free # linuxcon pass for every Video Contest submission. That&#39;s a $ 500 value. Submit here: http://bit.ly/fAvOp7
+
+16: To better understand Google, read Steven Levy&#39;s &quot;In the Plex&quot;. It&#39;s a really great book. Http://goo.gl/ITIaR
+
+17: Congrats to this week&#39;s # linuxcon Twitter / identi.ca winner @ smaffulli: &quot;Linux is mine and yours and theirs&quot; # linux # funambol
+
+18: Updated: iOS 5 rumours: what you need to know: We&#39;re expecting big things from Apple this year: the iPhone 5 is ... http://bit.ly/g7hBhY
+
+19: This wk&#39;s # linuxcon contest: where were u when u first discovered # linux? Post using # linuxcon and win free pass to event! Winner Monday!
+
+20: &quot;We designed Google to be the place where the kind of people we wanted to work here would work for free.&quot; (Urs Holzle) http://goo.gl/P1Bw0
+
+Done.
+	 
